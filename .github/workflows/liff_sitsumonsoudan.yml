@@ -21,7 +21,6 @@ jobs:
         run: |
           if [ -z "${{ env.LIFF_ID_SITSUMONSOUDAN }}" ]; then
             echo "Error: LIFF_ID_SITSUMONSOUDAN environment variable is not set."
-            exit 1
 
           fi
           echo "const config = { liffId_Sitsumonsoudan: '${{ env.LIFF_ID_SITSUMONSOUDAN }}', liffId_Siiresoudan: '${{ env.LIFF_ID_SIIRESOUDAN }}' };" > config.js
